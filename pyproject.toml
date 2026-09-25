@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "chart-reflection-agent"
+version = "0.1.0"
+description = "An agentic workflow that generates a chart, critiques its own output via a vision LLM, and regenerates an improved version (the reflection pattern)."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "kamal-parvez" }]
+dependencies = [
+    "pandas",
+    "matplotlib",
+    "google-genai",
+    "python-dotenv",
+    "Pillow",
+    "tenacity",
+]
+
+[project.optional-dependencies]
+dev = ["pytest"]
+
+[project.scripts]
+chart-agent = "chart_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,6 @@
+pandas
+matplotlib
+google-genai
+python-dotenv
+Pillow
+tenacity
