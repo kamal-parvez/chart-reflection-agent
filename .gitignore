@@ -17,11 +17,7 @@ venv/
 .DS_Store
 
 # Generated chart outputs
-outputs/*.png
-!outputs/.gitkeep
-
-# Jupyter
-.ipynb_checkpoints/
+outputs/
 
 # Testing
 .pytest_cache/
